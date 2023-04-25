@@ -53,4 +53,8 @@ public class Task{
         this.taskX2 = newtaskX2;
     }
 
+    public Task(TableRow tr){
+
+    }
+
 }

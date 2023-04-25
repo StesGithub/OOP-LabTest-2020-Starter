@@ -21,7 +21,7 @@ public class Gantt extends PApplet
 	}
 
 	public void loadTasks() throws FileNotFoundException{
-        Scanner sc = new Scanner(new File("/Users/stephen/Desktop/algosProject/OOP-LabTest-2020-Starter/java/data/tasks.csv"));
+        Scanner sc = new Scanner(new File("C:/Users/justs/Desktop/Year 2/algo&design/StephenThompson algo&design assignment/OOP-LabTest-2020-Starter/java/data/tasks.csv"));
         sc.useDelimiter(",");
 		while(sc.hasNext()){
             System.out.println(sc.next());
