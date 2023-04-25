@@ -13,13 +13,7 @@ public class Task{
     
     
 
-    public void task(String taskString, int taskX1, int taskX2){
-        this.taskString = taskString;
-        this.taskX1 = taskX1;
-        this.taskX2 = taskX2;
-        
-
-    }
+    
 
     public void TableRow(){
        /// this.taskString = row.getString("taskString");
@@ -53,8 +47,15 @@ public class Task{
         this.taskX2 = newtaskX2;
     }
 
-    public Task(TableRow tr){
+    public void task(String taskString, int taskX1, int taskX2){
+        this.taskString = taskString;
+        this.taskX1 = taskX1;
+        this.taskX2 = taskX2;
+        
 
+    }
+    public Task(TableRow tr){
+        this(tr.getString("Task"), tr.getInt("Start"), tr.getInt("End"));
     }
 
 }
